@@ -79,7 +79,11 @@
             </g:form>
         </div>
         <div class="mt-4">
+<<<<<<< HEAD
             <h5 style="text-align: center;">Subject Marks</h5>
+=======
+            <h5>Subject Marks</h5>
+>>>>>>> 859b0f405fdb2da2ed9b4b7e57792c2755e998fa
             <table class="table table-bordered">
                 <thead>
                     <tr>
