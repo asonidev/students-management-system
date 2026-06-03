@@ -1,0 +1,27 @@
+dataSource:
+    pooled: true
+    jmxExport: true
+    driverClassName: com.mysql.cj.jdbc.Driver
+    username: root
+    password: Root@1234
+
+spring:
+    autoconfigure:
+        exclude:
+            - org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration
+
+hibernate:
+    cache:
+        queries: false
+        use_second_level_cache: false
+        use_query_cache: false
+
+environments:
+    development:
+        logging:
+            level:
+                org.springframework.security: DEBUG
+        dataSource:
+            dbCreate: update
+            url: jdbc:mysql://localhost:3306/studentManagement?useSSL=false&serverTimezone=UTC
+            dialect: org.hibernate.dialect.MySQL8Dialect
