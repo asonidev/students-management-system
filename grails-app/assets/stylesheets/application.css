@@ -1,0 +1,25 @@
+/*
+* This is a manifest file that'll be compiled into application.css, which will include all the files
+* listed below.
+*
+* Any CSS file within this directory can be referenced here using a relative path.
+*
+* You're free to add application-wide styles to this file and they'll appear at the top of the
+* compiled file, but it's generally better to create a new file per style scope.
+*
+*= require webjars/bootstrap/%/dist/css/bootstrap.css
+*= require webjars/bootstrap-icons/%/font/bootstrap-icons.css
+*= require grails.css
+*= require_self
+*/
+
+/* Professional color for subject dashboard card */
+.subject-card {
+	background: linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%);
+	border-left: 6px solid #6366f1;
+	color: #232946;
+}
+
+.subject-card h2, .subject-card p {
+	color: #232946;
+}
