@@ -28,7 +28,7 @@
             <tr>
 
                 <th>ID</th>
-                <th>Names/th>
+                <th>Name</th>
                 <th>Code</th>
                 <th>Actions</th>
 

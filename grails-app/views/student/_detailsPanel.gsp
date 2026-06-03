@@ -1,7 +1,7 @@
 <div class="card custom-shadow p-4 mt-3" id="student-details-panel">
     <div class="d-flex justify-content-between align-items-center mb-3">
         <h4 class="mb-0">Student Details</h4>
-        <a href="/student/show/${student.id}" class="btn btn-outline-primary btn-sm">Open Full Details</a>
+        <a href="/student/show/${student.id}" class="btn btn-outline-primary btn-sm">View Full Details</a>
     </div>
 
     <div class="row mb-3">
