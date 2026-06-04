@@ -4,8 +4,11 @@
 
     <div class="card custom-shadow p-5">
 
-        <h2 class="mb-4">
+        <%-- <h2 class="mb-4">
             Add Department
+        </h2> --%>
+        <h2 class="mb-4">
+        <g:message code="department.create.title" default="Add Department" />
         </h2>
 
         <g:hasErrors bean="${department}">
@@ -57,9 +60,12 @@
 
             <div class="mb-3">
 
-                <label class="fw-bold">
+                <%-- <label class="fw-bold">
                     Department Name
-                </label>
+                </label> --%>
+                <label class="fw-bold">
+    <g:message code="department.name.label" default="Department Name" />
+</label>
 
                 <input type="text"
                        name="name"
@@ -79,9 +85,12 @@
 
             <div class="mb-4">
 
-                <label class="fw-bold">
+                <%-- <label class="fw-bold">
                     Department Code
-                </label>
+                </label> --%>
+                <label class="fw-bold">
+    <g:message code="department.code.label" default="Department Code" />
+</label>
 
                 <input type="text"
                        name="code"
@@ -97,11 +106,14 @@
 
             </div>
 
-            <button class="btn btn-success px-5">
+            <%-- <button class="btn btn-success px-5">
 
                 Save Department
 
-            </button>
+            </button> --%>
+            <button class="btn btn-success px-5">
+    <g:message code="department.button.save" default="Save Department" />
+</button>
 
         </g:form>
 

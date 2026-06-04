@@ -3,8 +3,11 @@
 
     <div class="d-flex justify-content-between mb-4">
 
-        <h2 class="fw-bold">
+        <%-- <h2 class="fw-bold">
             Departments
+        </h2> --%>
+        <h2 class="fw-bold"> 
+        <g:message code="department.list.title" default="Departments" /> 
         </h2>
 
         <%-- <a href="/department/create"
@@ -27,10 +30,11 @@
 
             <tr>
 
-                <th>ID</th>
-                <th>Names/th>
-                <th>Code</th>
-                <th>Actions</th>
+                <%-- <th>ID</th> --%>
+                <th><g:message code="department.field.id" default="ID" /></th>
+<th><g:message code="department.field.name" default="Name" /></th>
+<th><g:message code="department.field.code" default="Code" /></th>
+<th><g:message code="department.field.actions" default="Actions" /></th>
 
             </tr>
 
@@ -50,18 +54,22 @@
 
                     <td>
 
-                        <a href="/department/edit/${department.id}"
+                        <%-- <a href="/department/edit/${department.id}"
                            class="btn btn-warning btn-sm">
 
                             Edit
-                        </a>
-
-                        <a href="/department/delete/${department.id}"
+                        </a> --%>
+                        <g:link controller="department" action="edit" id="${department.id}" class="btn btn-warning btn-sm">
+                        <g:message code="default.button.edit.label" default="Edit" />
+                    </g:link>
+                        <%-- <a href="/department/delete/${department.id}"
                            class="btn btn-danger btn-sm">
 
                             Delete
-                        </a>
-
+                        </a> --%>
+                        <g:link controller="department" action="delete" id="${department.id}" class="btn btn-danger btn-sm">
+                        <g:message code="default.button.delete.label" default="Delete" />
+                    </g:link>
                     </td>
 
                 </tr>

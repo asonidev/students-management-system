@@ -4,9 +4,12 @@
 
     <div class="card custom-shadow p-5">
 
-        <h2 class="mb-4">
+        <%-- <h2 class="mb-4">
             Add Student
-        </h2>
+        </h2> --%>
+        <h2 class="mb-4">
+    <g:message code="student.create.title" default="Add Student" />
+</h2>
 
         <g:hasErrors bean="${student}">
 
@@ -61,9 +64,12 @@
 
             <div class="mb-3">
 
-                <label class="fw-bold">
+                <%-- <label class="fw-bold">
                     First Name
-                </label>
+                </label> --%>
+                <label class="fw-bold">
+    <g:message code="student.firstName.label" default="First Name" />
+</label>
 
                 <input type="text"
                        name="firstName"
@@ -84,8 +90,8 @@
             <div class="mb-3">
 
                 <label class="fw-bold">
-                    Last Name
-                </label>
+    <g:message code="student.lastName.label" default="Last Name" />
+</label>
 
                 <input type="text"
                        name="lastName"
@@ -106,8 +112,8 @@
             <div class="mb-3">
 
                 <label class="fw-bold">
-                    Email
-                </label>
+    <g:message code="student.email.label" default="Email" />
+</label>
 
                 <input type="email"
                        name="email"
@@ -128,8 +134,8 @@
             <div class="mb-4">
 
                 <label class="fw-bold">
-                    Age
-                </label>
+    <g:message code="student.age.label" default="Age" />
+</label>
 
                 <input type="number"
                        name="age"
@@ -147,7 +153,7 @@
 
             <button class="btn btn-primary px-5">
 
-                Create Student
+                <g:message code="student.create.button" default="Create Student" />
 
             </button>
 

@@ -6,13 +6,21 @@
 
 
         <div class="d-flex justify-content-between mb-4 align-items-center">
-            <h2>
+            <%-- <h2>
                 Student Department Assignments
+            </h2> --%>
+            <h2>
+                <g:message code="department.assignment.list.title" default="Student Department Assignments" />
             </h2>
+
             <div>
-                <a href="/department/assignStudent" class="btn btn-primary me-2">
+                <%-- <a href="/department/assignStudent" class="btn btn-primary me-2">
                     New Assignment
-                </a>
+                </a> --%>
+                <g:link controller="department" action="assignStudent" class="btn btn-primary me-2">
+                    <g:message code="department.assignment.button.new" default="New Assignment" />
+                </g:link>
+                
                 <g:link controller="department" action="exportAssignmentsExcel">
                     <button class="btn btn-success" type="button">
                         <i class="fa fa-file-excel"></i> Export
@@ -27,17 +35,19 @@
 
             <tr>
 
-                <th>ID</th>
+                <%-- <th>ID</th> --%>
 
-                <th>Student ID</th>
+                <th><g:message code="department.assignment.field.id" default="ID" /></th>
 
-                <th>Student Name</th>
+                <th><g:message code="department.assignment.field.studentId" default="Student ID" /></th>
 
-                <th>Department ID</th>
+                <th><g:message code="department.assignment.field.studentName" default="Student Name" /></th>
 
-                <th>Department</th>
+                <th><g:message code="department.assignment.field.departmentId" default="Department ID" /></th>
 
-                <th>Joining Date</th>
+                <th><g:message code="department.assignment.field.departmentName" default="Department" /></th>
+
+                <th><g:message code="department.assignment.field.joiningDate" default="Joining Date" /></th>
 
             </tr>
 
