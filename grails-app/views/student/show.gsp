@@ -2,7 +2,8 @@
 
 <div class="container-fluid">
     <div class="card custom-shadow p-5">
-        <h2 class="mb-4">Student Details</h2>
+        <%-- <h2 class="mb-4">Student Details</h2> --%>
+        <h2 class="mb-4"><g:message code="student.show.title" default="Student Details" /></h2>
 
 
         <div class="row mb-4">
@@ -16,7 +17,8 @@
 
         <hr/>
 
-        <h3>Assigned Departments</h3>
+        <%-- <h3>Assigned Departments</h3> --%>
+        <h3><g:message code="student.show.assignedDepartments" default="Assigned Departments" /></h3>
 
         <g:if test="${flash.message}">
             <div class="alert alert-success">${flash.message}</div>
@@ -40,7 +42,8 @@
         </ul>
 
         <div class="mt-4">
-            <h5>Assign Subjects to Student</h5>
+            <%-- <h5>Assign Subjects to Student</h5> --%>
+            <h5><g:message code="student.show.assignSubjects.title" default="Assign Subjects to Student" /></h5>
             <g:form controller="student" action="assignSubjects" class="row g-3">
                 <g:hiddenField name="studentId" value="${student.id}"/>
                 <div class="col-12">
@@ -56,7 +59,8 @@
                 </div>
             </g:form>
         </div>
-            <h5>Assign to New Department</h5>
+            <%-- <h5>Assign to New Department</h5> --%>
+            <h5><g:message code="student.show.assignDepartment.title" default="Assign to New Department" /></h5>
             <g:form controller="department" action="saveAssignment" class="row g-3">
                 <g:hiddenField name="studentId" value="${student.id}"/>
                 <g:hiddenField name="redirectController" value="student"/>
@@ -83,10 +87,10 @@
             <table class="table table-bordered">
                 <thead>
                     <tr>
-                        <th>Subject</th>
-                        <th>Marks</th>
-                        <th>Total</th>
-                        <th>Action</th>
+                        <th><g:message code="student.show.subjectMarks.subject.label" default="Subject" /></th>
+<th><g:message code="student.show.subjectMarks.marks.label" default="Marks" /></th>
+<th><g:message code="student.show.subjectMarks.total.label" default="Total" /></th>
+<th><g:message code="student.show.subjectMarks.action.label" default="Action" /></th>
                     </tr>
                 </thead>
                 <tbody>

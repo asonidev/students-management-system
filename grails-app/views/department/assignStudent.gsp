@@ -4,9 +4,12 @@
 
     <div class="card p-5 custom-shadow">
 
-        <h2 class="mb-4">
+        <%-- <h2 class="mb-4">
             Assign Student To Department
-        </h2>
+        </h2> --%>
+        <h2 class="mb-4">
+    <g:message code="department.assignment.create.title" default="Assign Student To Department" />
+</h2>
 
         <!-- SUCCESS -->
 
@@ -39,9 +42,12 @@
 
             <div class="mb-4">
 
-                <label class="fw-bold">
+                <%-- <label class="fw-bold">
                     Select Student
-                </label>
+                </label> --%>
+                <label class="fw-bold">
+    <g:message code="department.assignment.student.select.label" default="Select Student" />
+</label>
 
                 <g:select
                         name="studentId"
@@ -68,9 +74,12 @@
 
             <div class="mb-4">
 
-                <label class="fw-bold">
+                <%-- <label class="fw-bold">
                     Select Department
-                </label>
+                </label> --%>
+                <label class="fw-bold">
+    <g:message code="department.assignment.department.select.label" default="Select Department" />
+</label>
 
                 <g:select
                         name="departmentId"
@@ -90,11 +99,14 @@
 
             </div>
 
-            <button class="btn btn-primary px-5">
+            <%-- <button class="btn btn-primary px-5">
 
                 Assign Student
 
-            </button>
+            </button> --%>
+            <button class="btn btn-primary px-5">
+    <g:message code="department.assignment.button.assign" default="Assign Student" />
+</button>
 
         </g:form>
 

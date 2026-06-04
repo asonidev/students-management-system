@@ -6,11 +6,12 @@
         <div>
 
             <h2 class="fw-bold">
-                Students
+                 <g:message code="student.list.title" default="Students" />
             </h2>
 
             <p class="text-muted">
-                Manage student records
+                <%-- Manage student records --%>
+                <g:message code="student.list.subtitle" default="Manage student records" />
             </p>
 
         </div>
@@ -19,7 +20,8 @@
            class="btn btn-primary">
 
             <i class="fa fa-plus"></i>
-            Add Student
+            <%-- Add Student --%>
+            <g:message code="default.add.label" args="[message(code: 'student.label', default: 'Student')]" />
         </a>
 
     </div>
@@ -34,11 +36,12 @@
 
             <tr>
 
-                <th>ID</th>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Age</th>
-                <th>Actions</th>
+                <%-- <th>ID</th> --%>
+                <th><g:message code="student.field.id" default="ID" /></th>
+<th><g:message code="student.field.name" default="Name" /></th>
+<th><g:message code="student.field.email" default="Email" /></th>
+<th><g:message code="student.field.age" default="Age" /></th>
+<th><g:message code="student.field.actions" default="Actions" /></th>
 
             </tr>
 

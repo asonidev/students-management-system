@@ -2,7 +2,8 @@
 
 <div class="container-fluid">
     <div class="card custom-shadow p-5">
-        <h2 class="mb-4">Subject Management</h2>
+        <%-- <h2 class="mb-4">Subject Management</h2> --%>
+        <h2 class="mb-4"><g:message code="subject.index.title" default="Subject Management" /></h2>
 
         <g:if test="${flash.message}">
             <div class="alert alert-success">${flash.message}</div>
@@ -11,22 +12,24 @@
             <div class="alert alert-danger">${flash.error}</div>
         </g:if>
 
-        <h4>Add New Subject</h4>
+        <%-- <h4>Add New Subject</h4> --%>
+        <h4><g:message code="subject.index.addNew.title" default="Add New Subject" /></h4>
         <g:form controller="subject" action="save" class="row g-3 mb-4">
             <div class="col-auto">
                 <input type="text" name="name" class="form-control" placeholder="Subject Name" required/>
             </div>
             <div class="col-auto">
-                <button type="submit" class="btn btn-primary">Add Subject</button>
+                <button type="submit" class="btn btn-primary"><g:message code="subject.index.addSubject.button" default="Add Subject" /></button>
             </div>
         </g:form>
 
-        <h4>All Subjects</h4>
+        <%-- <h4>All Subjects</h4> --%>
+        <h4><g:message code="subject.index.allSubjects.title" default="All Subjects" /></h4>
         <table class="table table-bordered">
             <thead>
                 <tr>
-                    <th>Name</th>
-                    <th>Action</th>
+                    <th><g:message code="subject.field.name" default="Name" /></th>
+<th><g:message code="subject.field.action" default="Action" /></th>
                 </tr>
             </thead>
             <tbody>

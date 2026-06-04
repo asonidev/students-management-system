@@ -1,6 +1,7 @@
 <g:link controller="department" action="export">
         <i class="fa fa-file-excel"></i>
-        Export Students to Excel
+        <%-- Export Students to Excel --%>
+        <g:message code="department.assignment.button.export" default="Export Students to Excel" />
     </g:link>
 <!DOCTYPE html>
 <html>
@@ -11,7 +12,8 @@
     <meta charset="UTF-8">
 
     <title>
-        Student Management System
+        <%-- Student Management System --%>
+        <g:message code="app.name" default="Student Management System" />
     </title>
 
     <meta name="viewport"
@@ -164,37 +166,44 @@
 <div class="sidebar">
 
     <h2>
-        SMS
+        <%-- SMS --%>
+        <g:message code="app.name" default="SMS" />
     </h2>
 
     <a href="/">
         <i class="fa fa-home"></i>
-        Dashboard
+        <%-- Dashboard --%>
+        <g:message code="sidebar.dashboard" default="Dashboard" />
     </a>
 
     <a href="/student/index">
         <i class="fa fa-user-graduate"></i>
-        Students
+        <%-- Students --%>
+        <g:message code="sidebar.students" default="Students" />
     </a>
 
     <g:link controller="department" action="index">
         <i class="fa fa-building"></i>
-        Departments
+        <%-- Departments --%>
+        <g:message code="sidebar.departments" default="Departments" />
     </g:link>
 
     <g:link controller="department" action="assignStudent">
         <i class="fa fa-link"></i>
-        Assign Student
+        <%-- Assign Student --%>
+        <g:message code="sidebar.assignStudent" default="Assign Student" />
     </g:link>
 
     <g:link controller="department" action="assignments">
         <i class="fa fa-table"></i>
-        Assignments
+        <%-- Assignments --%>
+        <g:message code="sidebar.assignments" default="Assignments" />
     </g:link>
 
     <g:link controller="subject" action="index">
         <i class="fa fa-book"></i>
-        Subjects
+        <%-- Subjects --%>
+         <g:message code="sidebar.subjects" default="Subjects" />
     </g:link>
 
 </div>
